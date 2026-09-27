@@ -1,0 +1,552 @@
+{
+  "users": [
+    {
+      "id": "usr_demo",
+      "email": "researcher@demo.com",
+      "passwordHash": "$2a$10$wVbQp/q956H8sH2mXy42z.0YfQ3p1z2X3Y4Z5W6V7U8T9S0R1Q2P",
+      "name": "Dr. Alex Vance",
+      "institution": "AI & Data Science Lab",
+      "apiKey": "AQ.Ab8RN6LwiLQgGvG_VyZVVA24I_rwcMCZY5Q9ksGw84G9bK-bJw",
+      "createdAt": "2026-08-25T16:56:17.858Z"
+    },
+    {
+      "id": "usr_1787678633807_in3a",
+      "email": "testuser@university.edu",
+      "passwordHash": "$2a$10$.hWE1OyzQWyhdnjrKN6H7uKPG8CTO8bPMJfN0TxqoIY5Mja/EQ2Ha",
+      "name": "Dr. Test User",
+      "institution": "MIT AI Lab",
+      "apiKey": "",
+      "createdAt": "2026-08-25T17:23:53.807Z"
+    },
+    {
+      "id": "usr_1787678714754_0jj2",
+      "email": "namanjot46@gmail.com",
+      "passwordHash": "$2a$10$up6AhycWy7YNvQY4.dh6WebMgJRC1I.he9F19KotTcuOdLM001vru",
+      "name": "naman",
+      "institution": "ss",
+      "apiKey": "",
+      "createdAt": "2026-08-25T17:25:14.754Z"
+    },
+    {
+      "id": "usr_1787721403798_983u",
+      "email": "namanjot3456@gmail.com",
+      "passwordHash": "$2a$10$rLFZ4xZzVW0wavg1dsr1YOY7tS.qlgQU4Cx.1rkW9FHMTcpJOejIG",
+      "name": "mm",
+      "institution": "a",
+      "apiKey": "",
+      "createdAt": "2026-08-26T05:16:43.798Z"
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj_demo_rag",
+      "userId": "usr_demo",
+      "title": "Generative AI & RAG Benchmarks",
+      "description": "Comparative analysis of Transformer architectures, RAG synthesis, and deep residual networks.",
+      "paperIds": [
+        "paper_transformer",
+        "paper_rag",
+        "paper_resnet",
+        "paper_gan",
+        "paper_1787677304312",
+        "paper_1790529128433_46ky"
+      ],
+      "createdAt": "2026-08-25T16:56:17.860Z",
+      "updatedAt": "2026-09-27T17:12:08.433Z"
+    },
+    {
+      "id": "proj_1787678633807_whmw",
+      "userId": "usr_1787678633807_in3a",
+      "title": "Dr. Test User's Research Workspace",
+      "description": "Primary workspace for multi-document research, RAG chat, and paper analysis.",
+      "paperIds": [
+        "paper_transformer",
+        "paper_rag",
+        "paper_resnet",
+        "paper_gan"
+      ],
+      "createdAt": "2026-08-25T17:23:53.807Z",
+      "updatedAt": "2026-08-25T17:23:53.807Z"
+    },
+    {
+      "id": "proj_1787678659050_hk9p",
+      "userId": "usr_1787678633807_in3a",
+      "title": "Quantum Computing 2026",
+      "description": "Quantum error correction & surface codes",
+      "paperIds": [],
+      "createdAt": "2026-08-25T17:24:19.050Z",
+      "updatedAt": "2026-08-25T17:24:19.050Z"
+    },
+    {
+      "id": "proj_1787678714754_5yj4",
+      "userId": "usr_1787678714754_0jj2",
+      "title": "naman's Research Workspace",
+      "description": "Primary workspace for multi-document research, RAG chat, and paper analysis.",
+      "paperIds": [
+        "paper_transformer",
+        "paper_rag",
+        "paper_resnet",
+        "paper_gan",
+        "paper_1787678732326_odgy",
+        "paper_1787678744640_p7pl"
+      ],
+      "createdAt": "2026-08-25T17:25:14.754Z",
+      "updatedAt": "2026-08-25T17:25:44.640Z"
+    },
+    {
+      "id": "proj_1787717730158_as50",
+      "userId": "usr_demo",
+      "title": "hh",
+      "description": "Research paper workspace",
+      "paperIds": [],
+      "createdAt": "2026-08-26T04:15:30.158Z",
+      "updatedAt": "2026-08-26T04:15:30.158Z"
+    },
+    {
+      "id": "proj_1787721403798_9chj",
+      "userId": "usr_1787721403798_983u",
+      "title": "mm's Research Workspace",
+      "description": "Primary workspace for multi-document research, RAG chat, and paper analysis.",
+      "paperIds": [
+        "paper_transformer",
+        "paper_rag",
+        "paper_resnet",
+        "paper_gan"
+      ],
+      "createdAt": "2026-08-26T05:16:43.798Z",
+      "updatedAt": "2026-08-26T05:16:43.798Z"
+    }
+  ],
+  "papers": [
+    {
+      "id": "paper_transformer",
+      "projectId": "proj_demo_rag",
+      "title": "Attention Is All You Need",
+      "authors": "Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Łukasz Kaiser, Illia Polosukhin",
+      "year": 2017,
+      "venue": "NeurIPS 2017",
+      "doi": "10.48550/arXiv.1706.03762",
+      "fileUrl": "/sample_docs/transformer.pdf",
+      "pageCount": 15,
+      "abstract": "The dominant sequence transduction models are based on complex recurrent or convolutional neural networks that include an encoder and a decoder. We propose the Transformer, a novel architecture based solely on attention mechanisms, dispensing with recurrence and convolutions entirely.",
+      "summary": {
+        "executive": "Introduces the Transformer model architecture based exclusively on self-attention mechanisms, replacing recurrent networks (RNN/LSTM) and sequential processing with parallelizable self-attention.",
+        "methodology": "Encoder-decoder structure with Multi-Head Attention, Scaled Dot-Product Attention, and Positional Encodings.",
+        "findings": "Achieved 28.4 BLEU on English-to-German and 41.8 BLEU on English-to-French translation, outperforming previous state-of-the-art models with significantly lower training time.",
+        "limitations": "Quadratic computational complexity O(N^2) with sequence length; high memory overhead for long context sequences.",
+        "futureScope": "Linear attention mechanisms, long-context window extensions, multi-modal integration."
+      },
+      "tags": [
+        "Transformers",
+        "Attention",
+        "NLP",
+        "Deep Learning"
+      ],
+      "chunks": [
+        {
+          "id": "c1",
+          "page": 1,
+          "text": "We propose the Transformer, a model architecture eschewing recurrence and instead relying entirely on an attention mechanism to draw global dependencies between input and output. The Transformer allows for significantly more parallelization and can reach a new state of the art in translation quality after being trained for only twelve hours on eight P100 GPUs."
+        },
+        {
+          "id": "c2",
+          "page": 3,
+          "text": "An attention function can be described as mapping a query and a set of key-value pairs to an output, where the query, keys, values, and output are all vectors. The output is computed as a weighted sum of the values, where the weight assigned to each value is computed by a compatibility function of the query with the corresponding key."
+        },
+        {
+          "id": "c3",
+          "page": 5,
+          "text": "Multi-Head Attention allows the model to jointly attend to information from different representation subspaces at different positions. With single attention head, averaging inhibits this. MultiHead(Q, K, V) = Concat(head_1, ..., head_h)W^O where head_i = Attention(QW_i^Q, KW_i^K, VW_i^V)."
+        },
+        {
+          "id": "c4",
+          "page": 8,
+          "text": "Positional Encoding: Since our model contains no recurrence and no convolution, in order for the model to make use of the order of the sequence, we must inject some information about the relative or absolute position of the tokens in the sequence. We use sine and cosine functions of different frequencies."
+        }
+      ]
+    },
+    {
+      "id": "paper_rag",
+      "projectId": "proj_demo_rag",
+      "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+      "authors": "Patrick Lewis, Ethan Perez, Aleksandrs Piktus, Fabio Petroni, Vladimir Karpukhin, Naman Goyal, Heinrich Küttler, Mike Lewis, Wen-tau Yih, Tim Rocktäschel, Sebastian Riedel, Douwe Kiela",
+      "year": 2020,
+      "venue": "NeurIPS 2020",
+      "doi": "10.48550/arXiv.2005.11401",
+      "fileUrl": "/sample_docs/rag.pdf",
+      "pageCount": 12,
+      "abstract": "Large pre-trained language models have been shown to store factual knowledge in their parameters. However, their ability to access and precisely manipulate knowledge is still limited. We explore Retrieval-Augmented Generation (RAG) models which combine parametric memory with non-parametric memory.",
+      "summary": {
+        "executive": "Combines a pre-trained sequence-to-sequence model (BART) with a dense vector index (DPR) to retrieve relevant Wikipedia documents dynamically during text generation.",
+        "methodology": "Dense Passage Retrieval (DPR) for retriever, BART generator, trained end-to-end using marginal likelihood of target sequences.",
+        "findings": "Sets new state-of-the-art results on Open-Domain QA (Natural Questions, TriviaQA, WebQuestions) and generates more factual, specific responses with fewer hallucinations.",
+        "limitations": "Retrieval latency added to generation; retriever quality bounds overall system performance; index update requires re-embedding corpus.",
+        "futureScope": "Real-time online retriever updates, multi-modal retrieval, adaptive retrieval frequency."
+      },
+      "tags": [
+        "RAG",
+        "Retrieval",
+        "LLMs",
+        "Information Retrieval"
+      ],
+      "chunks": [
+        {
+          "id": "c10",
+          "page": 1,
+          "text": "We build RAG models where the parametric memory is a pre-trained seq2seq transformer, and the non-parametric memory is a dense vector index of Wikipedia, accessed with a pre-trained neural retriever (Dense Passage Retriever, DPR)."
+        },
+        {
+          "id": "c11",
+          "page": 3,
+          "text": "RAG-Sequence Model uses the same retrieved document to generate the complete sequence. RAG-Token Model can retrieve different documents for each generated token, allowing multi-document synthesis."
+        },
+        {
+          "id": "c12",
+          "page": 6,
+          "text": "On Natural Questions, RAG achieves 44.1% exact match score, outperforming T5-11B which stores knowledge purely in parameters. RAG models produce responses that are more factual and less hallucinated."
+        }
+      ]
+    },
+    {
+      "id": "paper_resnet",
+      "projectId": "proj_demo_rag",
+      "title": "Deep Residual Learning for Image Recognition",
+      "authors": "Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun",
+      "year": 2016,
+      "venue": "CVPR 2016 (Best Paper)",
+      "doi": "10.1109/CVPR.2016.90",
+      "fileUrl": "/sample_docs/resnet.pdf",
+      "pageCount": 12,
+      "abstract": "Deeper neural networks are more difficult to train. We present a residual learning framework to ease the training of networks that are substantially deeper than those used previously. We explicitly reformulate the layers as learning residual functions with reference to the layer inputs.",
+      "summary": {
+        "executive": "Solves the degradation problem in extremely deep neural networks using skip connections (residual shortcuts) to optimize networks with 100+ layers.",
+        "methodology": "Residual blocks F(x) + x, bottleneck layers, batch normalization, identity mapping.",
+        "findings": "Won 1st place in ILSVRC 2015 classification with ResNet-152 (3.57% top-5 error) and COCO object detection.",
+        "limitations": "High memory footprint during training; high parameter redundancy in deeper blocks.",
+        "futureScope": "Dense networks (DenseNet), residual transformers (ResNeXt, ConvNeXt)."
+      },
+      "tags": [
+        "Computer Vision",
+        "Residual Networks",
+        "Deep Learning",
+        "ImageNet"
+      ],
+      "chunks": [
+        {
+          "id": "c20",
+          "page": 1,
+          "text": "Deeper neural networks suffer from degradation: as network depth increases, accuracy gets saturated and then degrades rapidly. We address degradation by introducing a deep residual learning framework."
+        },
+        {
+          "id": "c21",
+          "page": 4,
+          "text": "Instead of hoping each stacked layer directly fits a desired underlying mapping H(x), we explicitly let these layers fit a residual mapping F(x) := H(x) - x. The original mapping is reformulated into F(x) + x."
+        }
+      ]
+    },
+    {
+      "id": "paper_gan",
+      "projectId": "proj_demo_rag",
+      "title": "Generative Adversarial Nets",
+      "authors": "Ian J. Goodfellow, Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David Warde-Farley, Sherjil Ozair, Aaron Courville, Yoshua Bengio",
+      "year": 2014,
+      "venue": "NIPS 2014",
+      "doi": "10.48550/arXiv.1406.2661",
+      "fileUrl": "/sample_docs/gan.pdf",
+      "pageCount": 9,
+      "abstract": "We propose a new framework for estimating generative models via an adversarial process, in which we simultaneously train two models: a generative model G that captures the data distribution, and a discriminative model D that estimates the probability that a sample came from the training data rather than G.",
+      "summary": {
+        "executive": "Formulates generative modeling as a minimax two-player game between a Generator and a Discriminator.",
+        "methodology": "Adversarial minimax objective min_G max_D V(D, G), backpropagation on both networks.",
+        "findings": "Successfully generated sharp image samples on MNIST, TFD, and CIFAR-10 without Markov chains or unrolled graph inferences.",
+        "limitations": "Training instability, mode collapse, vanishing gradients for generator.",
+        "futureScope": "Conditional GANs, StyleGAN, Diffusion Models."
+      },
+      "tags": [
+        "Generative AI",
+        "GANs",
+        "Adversarial Learning",
+        "Deep Learning"
+      ],
+      "chunks": [
+        {
+          "id": "c30",
+          "page": 1,
+          "text": "The generative model can be thought of as analogous to a team of counterfeiters, trying to produce fake currency and use it without detection, while the discriminative model is analogous to the police, trying to detect the counterfeit currency."
+        }
+      ]
+    },
+    {
+      "id": "paper_1787677304312",
+      "projectId": "proj_demo_rag",
+      "title": "NIRMAN_AI_REPORT(1)",
+      "authors": "Research Contributors",
+      "year": 2026,
+      "venue": "Academic Repository",
+      "doi": "10.1000/arxiv.304312",
+      "fileUrl": "/uploads/1787677303202-976652991-NIRMAN_AI_REPORT(1).pdf",
+      "pageCount": 7,
+      "abstract": "\n\n1 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \nA  \nProject Report \nOn \nNIRMAN AI \nSubmitted to \n \nChitkara University, Himachal Pradesh \nFor  \nThe Subject \n Applied AI and Prototype Development \nBy \nParv (2411981408) \n                                                            Mohit (2411981...",
+      "summary": {
+        "executive": "NIRMAN_AI_REPORT(1) explores scientific methodology and data analysis.",
+        "methodology": "Experimental benchmarks and analytical validation.",
+        "findings": "Improved metrics across standard baseline datasets.",
+        "limitations": "Limited testing on noisy real-world data streams.",
+        "futureScope": "Cross-domain transferability and model optimization."
+      },
+      "tags": [
+        "Research",
+        "PDF",
+        "Extracted"
+      ],
+      "chunks": [
+        {
+          "id": "c_1787677304311_0",
+          "page": 1,
+          "text": "1 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \nA  \nProject Report \nOn \nNIRMAN AI \nSubmitted to \n \nChitkara University, Himachal Pradesh \nFor  \nThe Subject \n Applied AI and Prototype Development \nBy \nParv (2411981408) \n                                                            Mohit (2411981351) \n                                                            Namanjot Singh (2411981365) \n                                                            Mohit (2411981349) \n \nSchool of Engineering and Technology \n \n \nUnder the guidance of \n \n \nDr."
+        },
+        {
+          "id": "c_1787677304312_1",
+          "page": 1,
+          "text": "Rinku Saini \nChitkara University,Himachal Pradesh \n \n \n \n \n                                     \n \n\n2 \n \n \n \n \n \n                                 Index \nS. No. Topic             Page No. \n1                       Introduction                     3 \n  1.1 Problem Statment 3 \n     1.2                       Objective 3 \n  1.3 Technology Stack 4 \n2.   Project Description 4 \n     3    System Architecture 5 \n  3.1   System Architecture Block Diagram 5 \n4 Data Flow Diagram 6 \n4.1 Level 0 DFD-Context Level 6 \n5 Features Implemented/Planned 7 \n6                      Challenges Faced 7 \n7"
+        },
+        {
+          "id": "c_1787677304312_2",
+          "page": 1,
+          "text": "Conclusion 7 \n8                      Future Scope 7 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n3 \n \n1. Introduction \nNIRMAN  AI  is  an  AI-based  road  monitoring  and  decision-support  system  designed  to \nidentify  road  damage  and  track  how  road  condition  changes  over  time.  The  current \nprototype  uses  road  photographs  uploaded  by  a  user  or  field  engineer.  Computer  Vision \ndetects  visible  defects  such  as  cracks  and  potholes,  while  relevant  road  information  can  be \nused to estimate a road health score. \nThe  main  additional  feature  is"
+        },
+        {
+          "id": "c_1787677304312_3",
+          "page": 2,
+          "text": "deterioration  tracking.  The  system  stores  inspection  results \nfor the same 50-meter road segment and compares them during later inspections. This helps \nidentify whether the segment is deteriorating slowly, moderately, or rapidly. \nThe  current  prototype  is  photo-based  so  the  AI  pipeline  can  be  developed  and  tested  with \nopen datasets and sample inspections. In future, cameras mounted on government inspection \nvehicles can collect road images automatically while the vehicle travels along the road. \n \n1.1 Problem Statement \n• Road inspection is largely manual and"
+        },
+        {
+          "id": "c_1787677304312_4",
+          "page": 2,
+          "text": "time-consuming. \n• Cracks and potholes can increase between inspection cycles. \n• A current road-condition score alone does not show how fast a road is deteriorating. \n• NIRMAN AI detects road damage and calculates a health score for a 50-meter segment. \n• Repeated inspection results are compared to calculate the deterioration rate. \n• The system generates a Road Health Card to support maintenance prioritization. \n \n1.2 Objective \n• Detect visible cracks and potholes using Computer Vision. \n• Estimate road condition using damage and relevant road information. \n• Track the same 50-meter road"
+        },
+        {
+          "id": "c_1787677304312_5",
+          "page": 2,
+          "text": "segment across repeated inspections. \n• Calculate deterioration rate and trend over time. \n• Generate a Road Health Card for inspection and maintenance support. \n• Develop the prototype using open datasets and free resources. \n \n1.3 Technology Stack \nComponent Technology Purpose \nFrontend React.js / HTML / CSS Image upload and interface \nBackend Python, FastAPI Application logic and APIs \nComputer Vision YOLO, OpenCV, PyTorch Crack and pothole \ndetection \nMachine Learning Scikit-learn / XGBoost Health and risk estimation \nDatabase PostgreSQL Inspection and history \nstorage \nTraining Google"
+        },
+        {
+          "id": "c_1787677304312_6",
+          "page": 3,
+          "text": "Colab / Kaggle Model training \n \n\n4 \n \n2. Project Description \nThe  project  works  in  two  main  AI  stages.  First,  a  Computer  Vision  model  analyzes  an \nuploaded  road  image  and  detects  visible  damage  such  as  cracks  and  potholes.  The  system \nextracts damage information such as count, approximate size and severity. \nSecond,   damage   information   can   be   combined   with   rainfall,   traffic,   road   age   and \nmaintenance  information  to  estimate  current  road  condition.  The  result  is  stored  for  the \nrelevant 50-meter road segment. \nDuring a later"
+        },
+        {
+          "id": "c_1787677304312_7",
+          "page": 3,
+          "text": "inspection, the new result is compared with the previous result. For example, \nif  health  changes  from  82  to  68  and  then  to  49,  the  system  identifies  a  fast  deterioration \ntrend.  Therefore,  NIRMAN  AI  does  not  only  ask  how  healthy  the  road  is  today;  it  also \ntracks how quickly the same segment is getting worse. \nThe  final  output  is  a  Road  Health  Card  containing  current  health,  detected  damage,  risk \nlevel  and  deterioration  trend.  The  prototype  is  a  decision-support  system  and  does  not \nreplace qualified engineering inspection. \n \n \n2.1"
+        },
+        {
+          "id": "c_1787677304312_8",
+          "page": 3,
+          "text": "Project Description  \n \n \n \n \n \n \n\n5 \n \n3. System Architecture \nThe system uses a modular architecture consisting of image input, preprocessing, Computer \nVision, health prediction, historical inspection storage and deterioration analysis. \n \n3.1 System Architecture – Block Diagram \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n6 \n \n4. Data Flow Diagram (DFD) \n1.1 4.1 Level 0 DFD – Context Level \n \n1.2 4.2 Level 1 DFD \n \n \n \n \n \n \n \n \n \n\n7 \n \n5. Features Implemented / Planned \n• Road image upload \n• Crack detection \n• Pothole detection \n• Crack and pothole counting \n• Damage size/severity estimation \n•"
+        },
+        {
+          "id": "c_1787677304312_9",
+          "page": 4,
+          "text": "50-meter road segment analysis \n• Road health score \n• Historical inspection storage \n• Health score comparison \n• Deterioration rate and trend \n• Road Health Card generation \n• Future vehicle-mounted automatic image collection \n• Future government, GIS, satellite, drone and IoT integration \n \n6. Challenges Faced \n• Lighting and camera angle can affect detection. \n• Thin cracks can be difficult to identify. \n• Real-world size measurement from a normal image is challenging. \n• Traffic and rainfall data may not be available for every segment. \n• The same 50-meter segment must be identified"
+        },
+        {
+          "id": "c_1787677304312_10",
+          "page": 4,
+          "text": "consistently across inspections. \n• Reliable deterioration analysis requires repeated historical observations. \n• AI results require real-world validation before engineering use. \n•  Large-scale  automatic  image  collection  will  require  suitable  cameras  and  processing \ninfrastructure. \n \n7. Conclusion \nNIRMAN AI provides an AI-based approach for road damage assessment and deterioration \nmonitoring.  Computer  Vision  identifies  cracks  and  potholes  from  road  photographs,  while \navailable road information can support current road-condition estimation. \nThe  main  additional"
+        },
+        {
+          "id": "c_1787677304312_11",
+          "page": 4,
+          "text": "feature  is  tracking  the  same  50-meter  road  segment  across  repeated \ninspections.  By  comparing  historical  and  current  health  scores,  the system  estimates \ndeterioration rate and highlights segments that are getting worse rapidly. \nThe current photo-upload prototype can be developed using open datasets and free resources. \nIn  future,  vehicle-mounted  cameras  can  automate  data  collection,  while  government  data, \nGIS,  satellite  imagery,  drones  and  IoT  sensors  can  expand  the  system  into  a  larger \ninfrastructure monitoring platform. \n \n8. Future Scope \n•"
+        },
+        {
+          "id": "c_1787677304312_12",
+          "page": 5,
+          "text": "Automatic road-image collection through government inspection vehicles \n• Satellite and GIS integration \n• Drone-based inspection \n• Authorized NHAI/PWD/government data integration \n• IoT-based infrastructure sensors \n• Long-term deterioration prediction using larger historical datasets \n• Government dashboard for inspection and maintenance prioritization \n\n8 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n9"
+        }
+      ]
+    },
+    {
+      "id": "paper_1787678732326_odgy",
+      "projectId": "proj_1787678714754_5yj4",
+      "title": "NIRMAN_AI_REPORT(1)",
+      "authors": "Research Contributors",
+      "year": 2026,
+      "venue": "Academic Repository",
+      "doi": "10.1000/arxiv.732326",
+      "fileUrl": "/uploads/1787678731756-322615085-NIRMAN_AI_REPORT(1).pdf",
+      "pageCount": 7,
+      "abstract": "\n\n1 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \nA  \nProject Report \nOn \nNIRMAN AI \nSubmitted to \n \nChitkara University, Himachal Pradesh \nFor  \nThe Subject \n Applied AI and Prototype Development \nBy \nParv (2411981408) \n                                                            Mohit (2411981...",
+      "summary": {
+        "executive": "NIRMAN_AI_REPORT(1) explores scientific methodology and data analysis.",
+        "methodology": "Experimental benchmarks and analytical validation.",
+        "findings": "Improved metrics across standard baseline datasets.",
+        "limitations": "Limited testing on noisy real-world data streams.",
+        "futureScope": "Cross-domain transferability and model optimization."
+      },
+      "tags": [
+        "Research",
+        "PDF",
+        "Extracted"
+      ],
+      "chunks": [
+        {
+          "id": "c_1787678732326_0",
+          "page": 1,
+          "text": "1 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \nA  \nProject Report \nOn \nNIRMAN AI \nSubmitted to \n \nChitkara University, Himachal Pradesh \nFor  \nThe Subject \n Applied AI and Prototype Development \nBy \nParv (2411981408) \n                                                            Mohit (2411981351) \n                                                            Namanjot Singh (2411981365) \n                                                            Mohit (2411981349) \n \nSchool of Engineering and Technology \n \n \nUnder the guidance of \n \n \nDr."
+        },
+        {
+          "id": "c_1787678732326_1",
+          "page": 1,
+          "text": "Rinku Saini \nChitkara University,Himachal Pradesh \n \n \n \n \n                                     \n \n\n2 \n \n \n \n \n \n                                 Index \nS. No. Topic             Page No. \n1                       Introduction                     3 \n  1.1 Problem Statment 3 \n     1.2                       Objective 3 \n  1.3 Technology Stack 4 \n2.   Project Description 4 \n     3    System Architecture 5 \n  3.1   System Architecture Block Diagram 5 \n4 Data Flow Diagram 6 \n4.1 Level 0 DFD-Context Level 6 \n5 Features Implemented/Planned 7 \n6                      Challenges Faced 7 \n7"
+        },
+        {
+          "id": "c_1787678732326_2",
+          "page": 1,
+          "text": "Conclusion 7 \n8                      Future Scope 7 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n3 \n \n1. Introduction \nNIRMAN  AI  is  an  AI-based  road  monitoring  and  decision-support  system  designed  to \nidentify  road  damage  and  track  how  road  condition  changes  over  time.  The  current \nprototype  uses  road  photographs  uploaded  by  a  user  or  field  engineer.  Computer  Vision \ndetects  visible  defects  such  as  cracks  and  potholes,  while  relevant  road  information  can  be \nused to estimate a road health score. \nThe  main  additional  feature  is"
+        },
+        {
+          "id": "c_1787678732326_3",
+          "page": 2,
+          "text": "deterioration  tracking.  The  system  stores  inspection  results \nfor the same 50-meter road segment and compares them during later inspections. This helps \nidentify whether the segment is deteriorating slowly, moderately, or rapidly. \nThe  current  prototype  is  photo-based  so  the  AI  pipeline  can  be  developed  and  tested  with \nopen datasets and sample inspections. In future, cameras mounted on government inspection \nvehicles can collect road images automatically while the vehicle travels along the road. \n \n1.1 Problem Statement \n• Road inspection is largely manual and"
+        },
+        {
+          "id": "c_1787678732326_4",
+          "page": 2,
+          "text": "time-consuming. \n• Cracks and potholes can increase between inspection cycles. \n• A current road-condition score alone does not show how fast a road is deteriorating. \n• NIRMAN AI detects road damage and calculates a health score for a 50-meter segment. \n• Repeated inspection results are compared to calculate the deterioration rate. \n• The system generates a Road Health Card to support maintenance prioritization. \n \n1.2 Objective \n• Detect visible cracks and potholes using Computer Vision. \n• Estimate road condition using damage and relevant road information. \n• Track the same 50-meter road"
+        },
+        {
+          "id": "c_1787678732326_5",
+          "page": 2,
+          "text": "segment across repeated inspections. \n• Calculate deterioration rate and trend over time. \n• Generate a Road Health Card for inspection and maintenance support. \n• Develop the prototype using open datasets and free resources. \n \n1.3 Technology Stack \nComponent Technology Purpose \nFrontend React.js / HTML / CSS Image upload and interface \nBackend Python, FastAPI Application logic and APIs \nComputer Vision YOLO, OpenCV, PyTorch Crack and pothole \ndetection \nMachine Learning Scikit-learn / XGBoost Health and risk estimation \nDatabase PostgreSQL Inspection and history \nstorage \nTraining Google"
+        },
+        {
+          "id": "c_1787678732326_6",
+          "page": 3,
+          "text": "Colab / Kaggle Model training \n \n\n4 \n \n2. Project Description \nThe  project  works  in  two  main  AI  stages.  First,  a  Computer  Vision  model  analyzes  an \nuploaded  road  image  and  detects  visible  damage  such  as  cracks  and  potholes.  The  system \nextracts damage information such as count, approximate size and severity. \nSecond,   damage   information   can   be   combined   with   rainfall,   traffic,   road   age   and \nmaintenance  information  to  estimate  current  road  condition.  The  result  is  stored  for  the \nrelevant 50-meter road segment. \nDuring a later"
+        },
+        {
+          "id": "c_1787678732326_7",
+          "page": 3,
+          "text": "inspection, the new result is compared with the previous result. For example, \nif  health  changes  from  82  to  68  and  then  to  49,  the  system  identifies  a  fast  deterioration \ntrend.  Therefore,  NIRMAN  AI  does  not  only  ask  how  healthy  the  road  is  today;  it  also \ntracks how quickly the same segment is getting worse. \nThe  final  output  is  a  Road  Health  Card  containing  current  health,  detected  damage,  risk \nlevel  and  deterioration  trend.  The  prototype  is  a  decision-support  system  and  does  not \nreplace qualified engineering inspection. \n \n \n2.1"
+        },
+        {
+          "id": "c_1787678732326_8",
+          "page": 3,
+          "text": "Project Description  \n \n \n \n \n \n \n\n5 \n \n3. System Architecture \nThe system uses a modular architecture consisting of image input, preprocessing, Computer \nVision, health prediction, historical inspection storage and deterioration analysis. \n \n3.1 System Architecture – Block Diagram \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n6 \n \n4. Data Flow Diagram (DFD) \n1.1 4.1 Level 0 DFD – Context Level \n \n1.2 4.2 Level 1 DFD \n \n \n \n \n \n \n \n \n \n\n7 \n \n5. Features Implemented / Planned \n• Road image upload \n• Crack detection \n• Pothole detection \n• Crack and pothole counting \n• Damage size/severity estimation \n•"
+        },
+        {
+          "id": "c_1787678732326_9",
+          "page": 4,
+          "text": "50-meter road segment analysis \n• Road health score \n• Historical inspection storage \n• Health score comparison \n• Deterioration rate and trend \n• Road Health Card generation \n• Future vehicle-mounted automatic image collection \n• Future government, GIS, satellite, drone and IoT integration \n \n6. Challenges Faced \n• Lighting and camera angle can affect detection. \n• Thin cracks can be difficult to identify. \n• Real-world size measurement from a normal image is challenging. \n• Traffic and rainfall data may not be available for every segment. \n• The same 50-meter segment must be identified"
+        },
+        {
+          "id": "c_1787678732326_10",
+          "page": 4,
+          "text": "consistently across inspections. \n• Reliable deterioration analysis requires repeated historical observations. \n• AI results require real-world validation before engineering use. \n•  Large-scale  automatic  image  collection  will  require  suitable  cameras  and  processing \ninfrastructure. \n \n7. Conclusion \nNIRMAN AI provides an AI-based approach for road damage assessment and deterioration \nmonitoring.  Computer  Vision  identifies  cracks  and  potholes  from  road  photographs,  while \navailable road information can support current road-condition estimation. \nThe  main  additional"
+        },
+        {
+          "id": "c_1787678732326_11",
+          "page": 4,
+          "text": "feature  is  tracking  the  same  50-meter  road  segment  across  repeated \ninspections.  By  comparing  historical  and  current  health  scores,  the system  estimates \ndeterioration rate and highlights segments that are getting worse rapidly. \nThe current photo-upload prototype can be developed using open datasets and free resources. \nIn  future,  vehicle-mounted  cameras  can  automate  data  collection,  while  government  data, \nGIS,  satellite  imagery,  drones  and  IoT  sensors  can  expand  the  system  into  a  larger \ninfrastructure monitoring platform. \n \n8. Future Scope \n•"
+        },
+        {
+          "id": "c_1787678732326_12",
+          "page": 5,
+          "text": "Automatic road-image collection through government inspection vehicles \n• Satellite and GIS integration \n• Drone-based inspection \n• Authorized NHAI/PWD/government data integration \n• IoT-based infrastructure sensors \n• Long-term deterioration prediction using larger historical datasets \n• Government dashboard for inspection and maintenance prioritization \n\n8 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n9"
+        }
+      ]
+    },
+    {
+      "id": "paper_1787678744640_p7pl",
+      "projectId": "proj_1787678714754_5yj4",
+      "title": "ai_summary_-_namanjot_singh_resume_improved",
+      "authors": "Research Contributors",
+      "year": 2026,
+      "venue": "Academic Repository",
+      "doi": "10.1000/arxiv.744640",
+      "fileUrl": "/uploads/1787678744619-7640838-ai_summary_-_namanjot_singh_resume_improved.pdf",
+      "pageCount": 1,
+      "abstract": "\n\nAI Summary - Namanjot_Singh_Resume_Improved\nGenerated on 29/7/2026\n1. Executive Abstract Summary\nExtracted content abstract for Namanjot_Singh_Resume_Improved.pdf. RAG chunking and vector\nindexing successfully stored in local ChromaDB memory store.\n\n2. Methodology & Architecture\nProcessed via PyPDF text extractor and SentenceTransformers MiniLM e...",
+      "summary": {
+        "executive": "ai_summary_-_namanjot_singh_resume_improved explores scientific methodology and data analysis.",
+        "methodology": "Experimental benchmarks and analytical validation.",
+        "findings": "Improved metrics across standard baseline datasets.",
+        "limitations": "Limited testing on noisy real-world data streams.",
+        "futureScope": "Cross-domain transferability and model optimization."
+      },
+      "tags": [
+        "Research",
+        "PDF",
+        "Extracted"
+      ],
+      "chunks": [
+        {
+          "id": "c_1787678744639_0",
+          "page": 1,
+          "text": "AI Summary - Namanjot_Singh_Resume_Improved\nGenerated on 29/7/2026\n1. Executive Abstract Summary\nExtracted content abstract for Namanjot_Singh_Resume_Improved.pdf. RAG chunking and vector\nindexing successfully stored in local ChromaDB memory store.\n\n2. Methodology & Architecture\nProcessed via PyPDF text extractor and SentenceTransformers MiniLM embedding engine.\n\n3. Dataset & Benchmark Corpus\nIndexed file chunks v1.0.\n\n4. Experimental Performance & Results\n100% Vector embeddings indexed in HNSW database graph.\n\n5. Principal Findings & Conclusion\nReady for interactive semantic search and RAG"
+        },
+        {
+          "id": "c_1787678744639_1",
+          "page": 1,
+          "text": "Q&A chat.\n\n6. Limitations & Constraints\nContext limited to uploaded text contents.\n\n7. Open Opportunities & Future Scope\nContinuous citation linking."
+        }
+      ]
+    },
+    {
+      "id": "paper_1790529128433_46ky",
+      "projectId": "proj_demo_rag",
+      "title": "Namanjot_Singh_Resume",
+      "authors": "Research Contributors",
+      "year": 2026,
+      "venue": "Academic Repository",
+      "doi": "10.1000/arxiv.128433",
+      "fileUrl": "/uploads/1790529128233-665754099-Namanjot_Singh_Resume.pdf",
+      "pageCount": 1,
+      "abstract": "\n\n...",
+      "summary": {
+        "executive": "Namanjot_Singh_Resume explores scientific methodology and data analysis.",
+        "methodology": "Experimental benchmarks and analytical validation.",
+        "findings": "Improved metrics across standard baseline datasets.",
+        "limitations": "Limited testing on noisy real-world data streams.",
+        "futureScope": "Cross-domain transferability and model optimization."
+      },
+      "tags": [
+        "Research",
+        "PDF",
+        "Extracted"
+      ],
+      "chunks": [
+        {
+          "id": "c_1790529128433_0",
+          "page": 1,
+          "text": ""
+        }
+      ]
+    }
+  ],
+  "bookmarks": [
+    {
+      "id": "b1",
+      "userId": "usr_demo",
+      "paperId": "paper_transformer",
+      "paperTitle": "Attention Is All You Need",
+      "text": "Multi-Head Attention allows the model to jointly attend to information from different representation subspaces at different positions.",
+      "note": "Key architectural insight for multi-head projections.",
+      "page": 5,
+      "color": "yellow",
+      "createdAt": "2026-08-25T16:56:17.860Z"
+    }
+  ],
+  "notes": [
+    {
+      "id": "n1",
+      "userId": "usr_demo",
+      "projectId": "proj_demo_rag",
+      "title": "RAG vs Parametric LLMs Synthesis",
+      "content": "RAG provides updated context without retraining costs. Compare DPR accuracy against T5 fine-tuning.",
+      "createdAt": "2026-08-25T16:56:17.860Z"
+    }
+  ]
+}
