@@ -3,6 +3,7 @@ const express = require('express');
 const cors = require('cors');
 const path = require('path');
 const fs = require('fs');
+const os = require('os');
 const multer = require('multer');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
@@ -19,9 +20,13 @@ app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ extended: true, limit: '50mb' }));
 
 // Ensure uploads folder exists
-const uploadsDir = path.join(__dirname, 'uploads');
+const uploadsDir = process.env.VERCEL ? path.join(os.tmpdir(), 'uploads') : path.join(__dirname, 'uploads');
 if (!fs.existsSync(uploadsDir)) {
-  fs.mkdirSync(uploadsDir, { recursive: true });
+  try {
+    fs.mkdirSync(uploadsDir, { recursive: true });
+  } catch (e) {
+    console.error('Failed to create uploadsDir:', e);
+  }
 }
 app.use('/uploads', express.static(uploadsDir));
 
@@ -710,6 +715,10 @@ app.delete('/api/bookmarks/:id', authMiddleware, (req, res) => {
 });
 
 // Start Express Server
-app.listen(PORT, () => {
-  console.log(`[Research OS Express Server] Running on http://localhost:${PORT}`);
-});
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`[Research OS Express Server] Running on http://localhost:${PORT}`);
+  });
+}
+
+module.exports = app;
